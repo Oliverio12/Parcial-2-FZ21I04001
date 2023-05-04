@@ -1,0 +1,43 @@
+/* ESTILO PARA 920*/
+ @media only screen and (max-width: 920px){
+    #cabecera{
+        flex-direction: column;
+    }
+    #logo{
+        width: 100%;
+    }
+    #logo img{
+       display: block;
+       margin: auto;
+    }
+/* ---------------------------MENU------------------------------------- */
+    .menu
+    {
+       position: absolute;
+       width: 100%; 
+       top: 100%;
+       left: 0;
+       transform: translateX(-100%);
+       
+       
+    }
+    #mmovil{
+        display: block;
+    }
+    .menu ul{
+        flex-direction: column;
+        background: #b5288f;
+    }
+    .menu a{
+        line-height: 45px;
+        padding: 0 20px;
+        border-bottom: 1px solid #684815;
+    }
+    #btn-menu:checked ~ .menu{
+        transform: translateX(0%);
+        transition: all 0.6s; 
+    }
+    .inicio{
+        height: 620px;
+    }
+ }

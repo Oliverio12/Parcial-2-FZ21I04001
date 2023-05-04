@@ -1,0 +1,256 @@
+header, section, article, nav, footer, aside, figure, form{
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0;
+    background: #dfcbcb;
+    font-family: 'Poppins', sans-serif;
+}
+*{
+    box-sizing: border-box;
+}
+h1, h2{
+    font-family: 'Poppins', sans-serif;   
+    background:  linear-gradient(to right, #c7236d, #d70190);
+    background-clip: linear-gradient(to right, #ff66cc, #60024c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;    
+    margin: 6px;
+    font-size: 70px;
+    text-align: center;
+}
+
+
+p{
+    font-size: 14px;
+}
+a{
+    text-decoration: none;
+    color:#3b0101;
+}
+a img{
+    border: none,
+}
+ul, ol{
+    font-size: 14px;
+    color: #555555;
+}
+
+#cajacabercera{
+    width: 100%;
+    background:  linear-gradient(to right, #5a014a, #bb12ad);
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 999;
+}
+#cabecera{
+    width: 100%;
+    max-width: 1100px;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+}
+#logo{
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;
+}
+/* -------------------MENU------------------------ */
+
+.menu{
+    width: 100%;
+    
+}
+#btn-menu{
+    display: none;
+
+}
+#mmovil{
+    font-size: 30px;
+    cursor: pointer;
+    text-align: right;
+    color: #eeeeee;
+    display: none;
+}
+.menu ul{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+}
+.menu a{
+    display: block;
+    line-height: 90px;
+    padding: 0 10px;
+    color: #fbfbfb;
+    font-size: 23px;
+}
+.menu a i{
+    font-size: 25px;
+    padding: 0 5px;
+}
+.menu a:hover{
+    color: #fff;
+    border-bottom: 2px solid #f2f2f2;
+    background-color: #ea1ad9;
+}
+.seccion{
+    width: 100%;
+    margin: 0;
+    height: 920px;
+}
+.Banner{
+    background-image: url("/Parcial/13184292_5161886.jpg");
+    background-position: center center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    height: 1004px;
+    position: relative;
+    
+}
+.inicio{
+    background: #a20095 url("..//Parcial/fondo-ciudad.png")  no-repeat bottom;
+    height: 920px;
+    position: relative;
+    padding-top: 50px;
+    background-blend-mode: multiply;
+
+}
+.LogoParcial{
+    display: flex;
+    margin: auto;
+    width: 600px;
+  
+}
+.calendario{
+    background: #ea1ad9  url("../Parcial/fondo-ciudad.png")  no-repeat bottom;
+    height: 920px;
+    position: relative;
+    padding-top: 50px;
+    background-blend-mode: multiply;
+
+}
+.articulos{
+    background: #c202b2 url("../Parcial/fondo-ciudad.png" ) no-repeat bottom;
+    height: 920px;
+    background-blend-mode: multiply;
+    position: relative;
+    padding-top: 50px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+
+.trencito{
+    background: url("/Parcial/tren.png") no-repeat;
+    background-position: bottom;
+    height: 400px;
+    position: relative;
+    padding-top: 755px;
+    animation: train 4.5s linear infinite;
+    overflow-x: hidden;
+
+}
+
+@keyframes train {
+    0% {
+      left: -100%;
+    }
+    100% {
+      left: 100%;
+    }
+  }
+
+
+
+
+.mas{
+    background: #ea1ad9 url("../Parcial/fondo-ciudad.png") no-repeat bottom;
+    height: 920px;
+    position: relative;
+    padding-top: 100px;
+    background-blend-mode: multiply;
+
+}
+.nube-gris1{
+    width: 100%;
+    height: auto;
+    display: block;
+    max-width: 396px;
+    position: absolute;
+    left: 2%;
+    top: 30%;
+}
+.nube-gris2{
+    width: 100%;
+    height: auto;
+    display: block;
+    max-width: 491px;
+    position: absolute;
+    right: 2%;
+    top: 30%;
+}
+
+/* PIE DE PAGINA*/
+#piepagina{
+    background:  linear-gradient(to right, #5a014a, #bb12ad);
+    padding: 2% 0;
+}
+.cajapie{
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+
+}
+#piepagina {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  #piepagina p {
+    text-align: left;
+    color: #000000;
+    font-size: 20px;
+    margin: 0;
+  }
+  
+  #piepagina ul {
+    display: flex;
+    list-style: none;
+    margin-top: 0;
+    margin-bottom: 10px;
+    padding: 0;
+    justify-content: flex-end;
+  }
+  
+  #piepagina ul li {
+    margin-left: 100px;
+    margin-right: 20px;
+  }
+  
+  #piepagina ul li:first-child {
+    margin-left: 0;
+  }
+  
+  #piepagina ul li a {
+    display: block;
+    width: 40px;
+    height: 20px;
+    text-align: center;
+    font-size: 35px;
+    color: #f769bc;
+  }
+
+  #piepagina ul li a:hover {
+    color: #000000;
+  }
+  
+  .pie:hover{
+    background-color: #dfcbcb;
+
+  }
